@@ -24,7 +24,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [riscoHoje, setRiscoHoje] = useState(false);
   const screenWidth = Dimensions.get("window").width;
-  const MARGEM_DE_RISCO = 1.15; // 130% da média
+  const MARGEM_DE_RISCO = 1.1; // 130% da média
   const gradients = {
     clear: ["#4a90e2", "#50a0f0"],
     partlyCloudy: ["#607d8b", "#90a4ae"],
@@ -63,7 +63,7 @@ export default function Home() {
   const fetchMessage = async () => {
     try {
       const response = await axios.get(
-        "https://e5bf-2804-1b1-fa00-f190-2d24-ccc7-3f7e-f1f0.ngrok-free.app/"
+        "https://a1a5-2804-18-135-3ba2-2461-3587-7e6e-9be6.ngrok-free.app/"
       );
 
       const { id, mensagem, data } = response.data;

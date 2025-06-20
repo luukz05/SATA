@@ -7,7 +7,7 @@ app.use(express.json());
 
 let ultimoAviso = null;
 let avisoId = 0;
-//para abrir o server ngrok rodar ngrok http 3001, pegar o link e jogar no front e no esp
+//para abrir o server ngrok rodar node index.js em um terminal e ngrok http 3001 em outro, pegar o link e jogar no front e no esp
 app.post("/", (req, res) => {
   const { mensagem } = req.body;
   if (!mensagem)
@@ -19,7 +19,7 @@ app.post("/", (req, res) => {
   ultimoAviso = {
     id: avisoId,
     mensagem,
-    data: agora.toISOString(), // também pode usar agora.toLocaleString() se preferir string pronta
+    data: agora.toISOString(),
   };
 
   console.log("Novo aviso:", ultimoAviso);
