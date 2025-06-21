@@ -51,13 +51,13 @@ sata/
 │
 └── README.md
 ```
-##📦 Instalação
-###🔧 Clone o repositório:
+## 📦 Instalação
+### 🔧 Clone o repositório:
 ```plaintext
 git clone https://github.com/seu-usuario/sata.git
 cd sata
 ```
-##▶️ Backend
+## ▶️ Backend
 ```plaintext
 cd backend
 pip install -r requirements.txt
@@ -65,7 +65,7 @@ python app.py
 ```
 Certifique-se de que o MongoDB está rodando e configure variáveis de ambiente conforme necessário.
 
-##▶️ Frontend
+## ▶️ Frontend
 ```plaintext
 cd frontend
 npm install
